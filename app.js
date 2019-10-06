@@ -24,11 +24,15 @@ window.addEventListener('load', () => {
                 })
                 .then(data => {
                     console.log(data);
-                    const { temperature, summary, icon } = data.currently
+                    const { temperature, summary, icon, timezone } = data.currently
                         //Set DOM elements from the API
                     temperatureDegree.textContent = temperature;
                     temperatureDescription.textContent = summary;
-                    locationTimezone.textContent = data.timezone;
+                    // let timezoneTextFormat = timezone;
+                    let headerTimezone = data.timezone;
+
+                    locationTimezone.textContent = headerTimezone.replace("/", " \n").replace("_", " ");
+
                     //Formula for Celsius
                     let celsius = (temperature - 32) * (5 / 9);
                     //Set icon

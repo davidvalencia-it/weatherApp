@@ -26,6 +26,12 @@ body {
 
 .location {
     background-color: rgb(42, 71, 121);
+    flex-direction: column;
+    white-space: pre-wrap;
+}
+
+.location h1 {
+    text-align: center;
 }
 
 .temperature {
