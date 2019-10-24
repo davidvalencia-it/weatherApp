@@ -1,4 +1,5 @@
 window.addEventListener('load', () => {
+
     let long;
     let lat;
     let temperatureDegree = document.querySelector('.temperature-degree');
@@ -24,7 +25,7 @@ window.addEventListener('load', () => {
                 })
                 .then(data => {
                     console.log(data);
-                    const { temperature, summary, icon, timezone } = data.currently
+                    const { temperature, summary, icon } = data.currently
                         //Set DOM elements from the API
                     temperatureDegree.textContent = temperature;
                     temperatureDescription.textContent = summary;

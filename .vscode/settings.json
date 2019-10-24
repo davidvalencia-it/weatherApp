@@ -1,0 +1,18 @@
+{
+    "liveServer.settings.port": 4500,
+    "liveServer.settings.root": "‎⁨MacHD⁩/Users⁩/davidvalencia⁩/⁨Documents⁩/Weater_App",
+    "liveServer.settings.CustomBrowser" : "chrome",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome --incognito --remote-debugging-port=9222",
+    "liveServer.settings.NoBrowser" : false,
+    "liveServer.settings.ignoreFiles" : [
+            ".vscode/**",
+            "**/*.scss",
+            "**/*.sass"
+    ],
+    "liveServer.settings.https": {
+        "enable": false, //set it true to enable the feature.
+        "cert": "C:\\https\\server.cert", //full path
+        "key": "C:\\https\\server.key", //full path
+        "passphrase": "12345"
+    },
+}
